@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avengers</title>
+    <!-- desc: creative landing page design with carousel & hober effects -->
+   
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="alldata/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="alldata/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="alldata/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="alldata/favicon_io/site.webmanifest" />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="page.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="alldata/Avengers-icon.png" alt="" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="banner">
+          \<!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="alldata/captain.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Captain America</h3>
+                  <p>A true soldier</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/hulk2.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Hulk</h3>
+                  <p>The Incredible</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/iron man.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Iron Man</h3>
+                  <p>Love you 3000</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/hawk eye.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Hawkeye</h3>
+                  <p>A True Avenger</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/widow.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>black Widow</h3>
+                  <p>A True Avenger</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/thor.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Thor</h3>
+                  <p>King of asgard</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/panther.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Black Panther</h3>
+                  <p>king of wakanda</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/wanda.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Scarlet Witch</h3>
+                  <p>a nexis being</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/winter soldier.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>white wolf</h3>
+                  <p>a great man</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="alldata/falcon.jpg" alt="" />
+                <div class="slide-text">
+                  <h3>Falcon</h3>
+                  <p>true friend</p>
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+           
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        //   direction: 'vertical', remove it and add new slideperview
+        loop: true,
+        slidesPerView: 4,
+        slidesPerGroup: 2,
+        spaceBetween: 20,
+        speed: 2000,
+
+        //   // If we need pagination
+        //   pagination: {
+        //     el: '.swiper-pagination',
+        //   },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
